@@ -1,3 +1,5 @@
 make apple character
 make dragons that will eat apple
 add intro/story text
+map
+difficulty effects hunger rate(add hunger rate) and dragon aggression(add dragon aggression)
