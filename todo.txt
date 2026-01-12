@@ -1,5 +1,8 @@
-make apple character
-make dragons that will eat apple
-add intro/story text
-map
+not in any order:
+
+improve apple character(more stuff than just health, hunger, etc)
+improve dragons(more stuff like w/ apple)
+improve story text
+map(maybe make a new file for map stuff? add actual things to the map)
 difficulty effects hunger rate(add hunger rate) and dragon aggression(add dragon aggression)
+add smth to clear screen, make program pop up neater & make it flow better(after intro, changing locations)
