@@ -287,12 +287,16 @@ def cave(user, dragon):
 #function to save the score
 def save_score(user, a):
     print("You survived for",user.total_turns,"turns")
-    if a == "w":
-        user.total_turns += 100
     with open('scores.txt', 'a') as f:
         f.write(user.name)
         f.write(":")
-        f.write(str(user.total_turns))
+        if a == "w":
+            user.total_turns += 100
+            f.write(str(user.total_turns))
+            f.write("Won")
+        else:
+            f.write(str(user.total_turns))
+            f.write("Lost")
         f.write("\n")
 
 #function to play again
