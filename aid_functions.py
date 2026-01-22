@@ -29,7 +29,7 @@ def food_chance(user):
     chance = r.randint(1,10)
     if chance >= 6:
         print("You found food! ")
-        user.hunger_changer("u")
+        user.hunger_changer("u", None)
     
     return chance
 
@@ -59,7 +59,7 @@ def home(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         print("Welcome to your home! ")
         print("You can: 1. Look for food 2. Sleep 3. Leave")
@@ -85,7 +85,7 @@ def n_home(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         print("Welcome to your neighbors house! It seems he isn't home. ")
         print("You can: 1. Look for food 2. Snoop 3. Leave")
@@ -111,7 +111,7 @@ def cemetery(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the Appleland Cemetery! The air is eerily still; even the birds are quiet.")
@@ -136,7 +136,7 @@ def orchard(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the Appleland Orchard! This is where all the fruit you eat is grown. ")
@@ -161,7 +161,7 @@ def lake(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the lake! The water seems to be buzzing with energy. ")
@@ -187,7 +187,7 @@ def hospital(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the Appleland Hospital! Weak and sick apples would congregate here, before the dragon attacked. ")
@@ -213,7 +213,7 @@ def store(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the Appleland Store! All the orchard's ripe fruits come here. ")
@@ -238,7 +238,7 @@ def forest(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the forest! You seem to be far from home, tread carefully. ")
@@ -263,7 +263,7 @@ def cave(user, dragon):
     user.turns = 3
     food_chance(user)
     dragon_chance(user, dragon)
-    user.hunger_changer("d")
+    user.hunger_changer("d", dragon)
     while True:
         get_info(user, dragon)
         print("Welcome to the cave! This is the dragon's den, it'd be wise to leave quickly. ")

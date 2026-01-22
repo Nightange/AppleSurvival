@@ -37,11 +37,11 @@ class apple:
             f.lose(self, dragon)
 
     #function to change hunger down or up
-    def hunger_changer(self, a):
+    def hunger_changer(self, a, dragon):
         if a == "d":
             self.hunger -= 10
             if self.hunger == 0:
-                self.health_changer("h")
+                self.health_changer("h", dragon)
         elif a == "u":
             if self.hunger >= 50:
                 print("You're full.")
@@ -83,6 +83,5 @@ class dragon:
     def health_changer(self, user, a):
         if a == "d":
             self.health -= user.attack()
-            print(self.health)
             if self.health == 0:
                 f.win(user, self)

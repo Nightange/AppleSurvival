@@ -12,7 +12,7 @@ def intro():
         os.system("clear")
     print("Welcome to my game! \n You are an apple, in a world full of hungry dragons. You must survive. ")
     name = input("What would you like to name your apple? ")
-    if name.lower() == "mina":
+    if "mina" in name.lower():
         print("Sam loves you! ")
     print("Hello", name)
     while True:
