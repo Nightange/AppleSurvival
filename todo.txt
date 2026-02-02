@@ -2,9 +2,6 @@ not in any order:
 
 improve apple character(more stuff than just health, hunger, etc)
 improve dragons(more stuff like w/ apple)
-improve story text(instructions)
 difficulty effects dragon encounter rate and food spawn chance
-add armor(?)
 add more stuff
 maybe allow user to continue after slaying dragon, dragons attacking in increasing difficulty
-vary food spawn chance based on area

@@ -28,7 +28,7 @@ def intro():
         "hard" : {"health": 350, "damage": 50},
     }
     dragon = c.dragon(**difficulty_map[difficulty])
-    user = c.apple(name, 100, 50, 3, 0)
+    user = c.apple(name, 100, 50, 3, 0, difficulty)
     return user, dragon 
 
 #function to print the world map and get where user wants to go
